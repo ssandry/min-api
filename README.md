@@ -1,4 +1,4 @@
-### #REST API for the MINO repository.
+# 📡 REST API for the MINO repository.
 
 **Live preview [API].**
 
