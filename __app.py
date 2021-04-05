@@ -1,14 +1,13 @@
 from flask import Flask, jsonify, render_template, url_for
 import json
+import requests
 
 
 # Init app
 app = Flask(__name__)
 
 
-# Init data
-with open("./data/collections.json", encoding="utf-8") as json_data_res:
-    collections = json.load(json_data_res)
+COLLECTIONS = requests.get("https://api.jsonbin.io/b/6069b8386397691864735635")
 
 
 # Routing
@@ -23,14 +22,14 @@ def index():
 @app.route("/api/get-collections", methods=["GET"])
 @app.route("/mino-api/get-collections", methods=["GET"])
 def get_collections():
-    return jsonify({ "collections": collections })
+    return jsonify({ "collections": COLLECTIONS.json() })
 
 
 @app.route("/api/v.1.0/get-collections/<int:collection_id>", methods=["GET"])
 @app.route("/api/get-collections/<int:collection_id>", methods=["GET"])
 @app.route("/mino-api/v.1.0/get-collections/<int:collection_id>", methods=["GET"])
 def get_collection(collection_id):
-    return collections[collection_id]
+    return COLLECTIONS.json()[collection_id]
 
 
 # Run app
