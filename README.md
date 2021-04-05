@@ -1,10 +1,10 @@
-# 📡 REST API for the MINO repository.
+## 📡 REST API for the MINO repository.
 
 **Live preview [API].**
 
 **Deployed thanks to [Heroku].** <br>
 
-# Setup
+## Setup
 
 **Install project**
 
@@ -13,13 +13,13 @@ $git clone https://github.com/ssandry/mino-api.git
 $cd mino-api
 ```
 
-# Start API
+## Start API
 
 ```sh
 $python3 __app.py
 ```
 
-### Useful documentation
+## Useful documentation
 
 - **https://flask.palletsprojects.com/en/1.1.x/**
 - **https://habr.com/ru/post/346306/**
