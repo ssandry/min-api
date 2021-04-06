@@ -7,6 +7,7 @@ import requests
 app = Flask(__name__)
 
 
+# JSON.bin
 COLLECTIONS = requests.get("https://api.jsonbin.io/b/6069b8386397691864735635")
 
 
