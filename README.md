@@ -13,6 +13,12 @@ $git clone https://github.com/ssandry/mino-api.git
 $cd mino-api
 ```
 
+## Get requirements
+
+```sh
+$pip freeze
+```
+
 ## Start API
 
 ```sh
