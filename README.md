@@ -4,6 +4,7 @@
 
 **Deployed thanks to [Heroku].** <br>
 **Database: [JSON.bin]** <br>
+**Production server: [Gunicorn]** <br>
 
 ## Setup
 
@@ -35,3 +36,4 @@ $python3 __app.py
 [Heroku]: <https://dashboard.heroku.com/>
 [API]: <https://mino-api-please.herokuapp.com/>
 [JSON.bin]: <https://jsonbin.io/>
+[Gunicorn]: <https://gunicorn.org/>
