@@ -29,7 +29,6 @@ pipenv==2020.11.15
 promise==2.3
 pydantic==1.7.3
 python-dotenv==0.15.0
-python-gql==0.2.3
 pytz==2020.5
 PyYAML==5.4.1
 requests==2.25.1
