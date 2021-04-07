@@ -8,6 +8,7 @@
 
 ## Setup
 
+**Install [Python]**
 **Install project**
 
 ```sh
@@ -34,6 +35,7 @@ $python3 __app.py
 - **https://pythonru.com/uroki/7-osnovy-shablonizatora-jinja**
 
 [Heroku]: <https://dashboard.heroku.com/>
+[Python]: <https://www.python.org/>
 [API]: <https://mino-api-please.herokuapp.com/>
 [JSON.bin]: <https://jsonbin.io/>
 [Gunicorn]: <https://gunicorn.org/>
