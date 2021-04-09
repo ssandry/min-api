@@ -1,14 +1,14 @@
-## 📡 REST API for the MINO repository.
+### 📡 REST API for the MINO repository.
 
 **Live preview [API].**
 
 **Deployed thanks to [Heroku].** <br>
-**Database: [JSON.bin]** <br>
-**Production server: [Gunicorn]** <br>
+**Database: [JSON.bin].** <br>
+**Production server: [Gunicorn].** <br>
 
-## Setup
+### Setup
 
-**Install [Python]**
+**Install [Python].**
 **Install project**
 
 ```sh
@@ -16,19 +16,19 @@ $git clone https://github.com/ssandry/mino-api.git
 $cd mino-api
 ```
 
-## Get requirements
+### Get requirements
 
 ```sh
 $pip freeze
 ```
 
-## Start API
+### Start API
 
 ```sh
 $python3 __app.py
 ```
 
-## Useful documentation
+### Useful documentation
 
 - **https://flask.palletsprojects.com/en/1.1.x/**
 - **https://habr.com/ru/post/346306/**
