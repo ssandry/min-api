@@ -1,4 +1,4 @@
-<img src="./md/__frame.png" width="100%" />
+<img src="./md/__fr.png" width="100%" />
 
 ## 📡 REST API for the MINO repository.
 
