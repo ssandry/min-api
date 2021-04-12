@@ -10,7 +10,7 @@
 
 ## Setup
 
-**Install [Python].**
+**Install [Python].** <br>
 **Install project**
 
 ```sh
