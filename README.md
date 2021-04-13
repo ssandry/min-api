@@ -2,15 +2,15 @@
 
 ## 📡 REST API for the MINO repository.
 
-**Live preview [API].**
+**Live preview [API]**
 
-**Deployed thanks to [Heroku].** <br>
-**Database: [JSON.bin].** <br>
-**Production server: [Gunicorn].** <br>
+**Deployed thanks to [Heroku]** <br>
+**Database: [JSON.bin]** <br>
+**Production server: [Gunicorn]** <br>
 
 ## Setup
 
-**Install [Python].** <br>
+**Install [Python]** <br>
 **Install project**
 
 ```sh
