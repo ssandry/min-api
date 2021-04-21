@@ -1,6 +1,6 @@
-<img src="./md/__fr.png" width="100%" />
+![API](md/__fr.png "API")
 
-## 💭 REST API for the MINO repository
+## REST API for the MINO repository
 
 **Live preview [API]**
 
