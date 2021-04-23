@@ -1,5 +1,4 @@
 from flask import Flask, jsonify, render_template, url_for
-import json
 import requests
 
 
@@ -7,8 +6,11 @@ import requests
 app = Flask(__name__)
 
 
+CONST_JSONBIN_URL_REQ_STRING="https://api.jsonbin.io/b/6069b8386397691864735635"
+
+
 # JSON.bin
-COLLECTIONS = requests.get("https://api.jsonbin.io/b/6069b8386397691864735635")
+COLLECTIONS = requests.get(CONST_JSONBIN_URL_REQ_STRING)
 
 
 # Routing
