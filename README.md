@@ -27,7 +27,7 @@ $pip freeze
 ## Start API
 
 ```sh
-$python3 __app.py
+$python3 app.py
 ```
 
 ## Useful documentation
