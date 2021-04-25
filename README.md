@@ -8,28 +8,6 @@
 **Database: [JSON.bin]** <br>
 **Production server: [Gunicorn]** <br>
 
-## Setup
-
-**Install [Python]** <br>
-**Install project**
-
-```sh
-$git clone https://github.com/ssandry/mino-api.git
-$cd mino-api
-```
-
-## Get requirements
-
-```sh
-$pip freeze
-```
-
-## Start API
-
-```sh
-$python3 app.py
-```
-
 ## Useful documentation
 
 - **https://flask.palletsprojects.com/en/1.1.x/**
