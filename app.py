@@ -1,12 +1,13 @@
-from flask import Flask, jsonify, render_template, url_for
+import os
 import requests
+from flask import Flask, jsonify, render_template, url_for
 
 
 # Init app
 app = Flask(__name__)
 
 
-CONST_JSONBIN_URL_REQ_STRING="https://api.jsonbin.io/b/6069b8386397691864735635"
+CONST_JSONBIN_URL_REQ_STRING = os.environ.get("CONST_JSONBIN_URL_REQ_STRING", None)
 
 
 # JSON.bin
