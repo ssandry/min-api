@@ -7,6 +7,7 @@ from flask import Flask, jsonify, render_template, url_for
 app = Flask(__name__)
 
 
+# Use Environment variable from Heroku
 CONST_JSONBIN_URL_REQ_STRING = os.environ.get("CONST_JSONBIN_URL_REQ_STRING", None)
 
 
