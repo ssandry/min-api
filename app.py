@@ -1,6 +1,7 @@
 import os
 import requests
-from flask import Flask, jsonify, render_template, url_for
+import json
+from flask import Flask, jsonify, render_template
 
 
 # Init app
@@ -11,8 +12,21 @@ app = Flask(__name__)
 CONST_JSONBIN_URL_REQ_STRING = os.environ.get("CONST_JSONBIN_URL_REQ_STRING", None)
 
 
-# JSON.bin
-COLLECTIONS = requests.get(CONST_JSONBIN_URL_REQ_STRING)
+# Defining the mode
+if CONST_JSONBIN_URL_REQ_STRING == None:
+    MODE = "dev"
+else:
+    MODE = "prod"
+
+
+# Fetch data
+if MODE == "dev":
+    with open("./data/collections.dev.json", encoding="utf-8") as json_res:
+        COLLECTIONS = json.load(json_res)
+elif MODE == "prod":
+    COLLECTIONS = requests.get(CONST_JSONBIN_URL_REQ_STRING)
+else:
+    print("MODE undefined")
 
 
 # Routing
@@ -27,14 +41,22 @@ def index():
 @app.route("/api/get-collections", methods=["GET"])
 @app.route("/mino-api/get-collections", methods=["GET"])
 def get_collections():
-    return jsonify({ "collections": COLLECTIONS.json() })
+
+    if MODE == "prod":
+        return jsonify({ "collections": COLLECTIONS.json() })
+    elif MODE == "dev":
+        return jsonify({ "collections": COLLECTIONS })
 
 
 @app.route("/api/v.1.0/get-collections/<int:collection_id>", methods=["GET"])
 @app.route("/api/get-collections/<int:collection_id>", methods=["GET"])
 @app.route("/mino-api/v.1.0/get-collections/<int:collection_id>", methods=["GET"])
 def get_collection(collection_id):
-    return COLLECTIONS.json()[collection_id]
+
+    if MODE == "prod":
+        return COLLECTIONS.json()[collection_id]
+    elif MODE == "dev":
+        return COLLECTIONS[collection_id]
 
 
 # Run app
