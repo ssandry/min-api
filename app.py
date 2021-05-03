@@ -5,7 +5,7 @@ from flask import Flask, jsonify, render_template
 
 
 # Init app
-__APP = Flask(__name__)
+app = Flask(__name__)
 
 
 # Use Environment variable from Heroku
@@ -30,16 +30,16 @@ else:
 
 
 # Routing
-@__APP.route("/", methods=["GET"])
-@__APP.route("/index-api", methods=["GET"])
-@__APP.route("/mino-api", methods=["GET"])
+@app.route("/", methods=["GET"])
+@app.route("/index-api", methods=["GET"])
+@app.route("/mino-api", methods=["GET"])
 def index():
     return render_template("index.html")
 
 
-@__APP.route("/api/v.1.0/get-collections", methods=["GET"])
-@__APP.route("/api/get-collections", methods=["GET"])
-@__APP.route("/mino-api/get-collections", methods=["GET"])
+@app.route("/api/v.1.0/get-collections", methods=["GET"])
+@app.route("/api/get-collections", methods=["GET"])
+@app.route("/mino-api/get-collections", methods=["GET"])
 def get_collections():
 
     if MODE == "prod":
@@ -48,9 +48,9 @@ def get_collections():
         return jsonify({ "collections": COLLECTIONS })
 
 
-@__APP.route("/api/v.1.0/get-collections/<int:collection_id>", methods=["GET"])
-@__APP.route("/api/get-collections/<int:collection_id>", methods=["GET"])
-@__APP.route("/mino-api/v.1.0/get-collections/<int:collection_id>", methods=["GET"])
+@app.route("/api/v.1.0/get-collections/<int:collection_id>", methods=["GET"])
+@app.route("/api/get-collections/<int:collection_id>", methods=["GET"])
+@app.route("/mino-api/v.1.0/get-collections/<int:collection_id>", methods=["GET"])
 def get_collection(collection_id):
 
     if MODE == "prod":
@@ -61,4 +61,4 @@ def get_collection(collection_id):
 
 # Run app
 if __name__ == "__main__": 
-    __APP.run(debug=False)
+    app.run(debug=False)
