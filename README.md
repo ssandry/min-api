@@ -1,4 +1,4 @@
-![API](md/__frame.png "API")
+![API](md/__preview.png "API")
 
 ## REST API for the MINO repository
 
