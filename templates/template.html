@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MINO-api</title>
+    <title>MINO API</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='/main.css') }}">
 </head>
 <body>
     <div class = "wrapper">
         <header>
-            <h2 class="logo">MINO-api v. 01. 5</h2>
-            <nav></nav>
+            <h2 class="logo">MINO API v.4.0.0</h2>
+            <nav>
+                <a href="https://mino-ssandry.vercel.app/">
+                    Return to MINO
+                </a>
+            </nav>
         </header>
         {% block body %}{% endblock body %}
     </div>

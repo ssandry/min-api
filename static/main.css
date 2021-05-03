@@ -18,6 +18,12 @@ body {
     max-width: 1440px;
 }
 
+.wrapper nav a {
+    color: rgb(212, 212, 212);
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .wrapper > header {
     width: 100%;
     height: 131px;
@@ -29,6 +35,8 @@ body {
     box-sizing: border-box;
     padding-left: 10vw;
     padding-right: 10vw;
+
+    border-bottom: 5px solid #000000;
 }
 
 .wrapper > header > .logo {
