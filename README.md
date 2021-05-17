@@ -4,9 +4,9 @@
 
 **Live preview [API]**
 
-**Deployed thanks to [Heroku]** <br>
-**Database: [JSON.bin]** <br>
-**Production server: [Gunicorn]** <br>
+**Deployed thanks to [Heroku]** \
+**Database: [JSON.bin]** \
+**Production server: [Gunicorn]**
 
 ## Useful documentation
 
