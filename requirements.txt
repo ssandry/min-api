@@ -28,7 +28,7 @@ MarkupSafe==1.1.1
 Pillow==8.1.0
 pipenv==2020.11.15
 promise==2.3
-pydantic==1.7.3
+pydantic==1.7.4
 python-dotenv==0.15.0
 pytz==2020.5
 PyYAML==5.4.1
