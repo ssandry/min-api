@@ -1,6 +1,6 @@
 ![API](md/__preview.png "API")
 
-## REST API for the MINO repository
+## RESTful API for the MINO repository
 
 **Live preview [API]**
 
