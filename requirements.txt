@@ -10,7 +10,7 @@ contextlib2==0.6.0.post1
 distlib==0.3.1
 Django==3.1.5
 dogesay==1.0.0
-fastapi==0.63.0
+fastapi==0.65.2
 filelock==3.0.12
 Flask==1.1.2
 Flask-GraphQL==2.0.1
